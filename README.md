@@ -1,3 +1,6 @@
+![Docker Pulls](https://img.shields.io/docker/pulls/harshalk91/angular-jenkins-slave?label=Jenkins%20Slave%20docker%20pulls)
+![Docker Pulls](https://img.shields.io/docker/pulls/harshalk91/jenkins-slave?label=Jenkins%20Master%20docker%20pulls)
+
 ## jenkins-slave
 
 ## Usage
@@ -16,7 +19,6 @@ python3.8
 docker pull harshalk91/angular-jenkins-slave:latest
 
 "Packages Included"
-
 node 12.18.4
 yarn 1.22.4
 npm 6.14.6
