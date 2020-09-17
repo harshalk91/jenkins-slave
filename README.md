@@ -17,7 +17,7 @@ python 3.8
 ============================================================================
 Feel free to reach out to me at harshalk.91@gmail.com
 
-## jenkins-slave
+## angular-jenkins-slave
 
 ## Usage
 ```bash
