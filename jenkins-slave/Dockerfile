@@ -52,6 +52,7 @@ RUN apt-get install python3.8 -y
 RUN apt-get install python3-pip -y
 RUN pip3 install awscli --upgrade --user
 RUN ln -s /root/.local/bin/aws /usr/bin/aws
+RUN curl -sLO https://storage.googleapis.com/kubernetes-release/release/v1.15.1/bin/linux/amd64/kubectl && chmod +x ./kubectl && mv ./kubectl /usr/bin/kubectl
 
 USER ${user}
 ENV AGENT_WORKDIR=${AGENT_WORKDIR}
