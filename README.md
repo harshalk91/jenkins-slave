@@ -1,5 +1,5 @@
-![Docker Pulls](https://img.shields.io/docker/pulls/harshalk91/angular-jenkins-slave?label=Jenkins%20Slave%20docker%20pulls)
-![Docker Pulls](https://img.shields.io/docker/pulls/harshalk91/jenkins-slave?label=Jenkins%20Master%20docker%20pulls)
+![Docker Pulls](https://img.shields.io/docker/pulls/harshalk91/angular-jenkins-slave?label=angular%20jenkins%20Slave%20docker%20pulls)
+![Docker Pulls](https://img.shields.io/docker/pulls/harshalk91/jenkins-slave?label=Jenkins%20slave%20docker%20pulls)
 
 ## jenkins-slave
 
