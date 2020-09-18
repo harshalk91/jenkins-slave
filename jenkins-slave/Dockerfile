@@ -44,7 +44,6 @@ RUN curl --create-dirs -fsSLo /usr/share/jenkins/agent.jar https://repo.jenkins-
 
 RUN apt-get purge -y \
     apt-transport-https \
-    curl \
     gnupg-agent
 
 RUN apt-get clean -y && apt-get autoremove -y
