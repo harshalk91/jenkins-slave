@@ -1,5 +1,8 @@
 FROM ubuntu:18.04
 
+LABEL MAINTAINER="Harshal Kulkarni"
+LABEL Description="This is a base image, which allows connecting Jenkins agents via JNLP protocols"
+
 RUN groupadd --gid 1001 node \
   && useradd --uid 1001 --gid node --shell /bin/bash --create-home node
 
@@ -115,6 +118,8 @@ RUN apt-get install python3.8 -y
 RUN apt-get install python3-pip -y
 RUN pip3 install awscli --upgrade --user
 RUN ln -s /root/.local/bin/aws /usr/bin/aws
+RUN curl -sLO https://storage.googleapis.com/kubernetes-release/release/v1.15.1/bin/linux/amd64/kubectl && chmod +x ./kubectl && mv ./kubectl /usr/bin/kubectl
+RUN curl -so aws-iam-authenticator https://amazon-eks.s3.us-west-2.amazonaws.com/1.17.9/2020-08-04/bin/linux/amd64/aws-iam-authenticator && chmod +x ./aws-iam-authenticator && mv ./aws-iam-authenticator /usr/bin/
 
 USER ${user}
 ENV AGENT_WORKDIR=${AGENT_WORKDIR}
